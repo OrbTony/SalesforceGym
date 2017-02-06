@@ -9,7 +9,7 @@ function getClassDetails(classId, success, error) {
   "Instuctor__r.First_Name__c, " +
   "Instuctor__r.Last_Name__c " +
   "FROM Class_Trainer__c " +
-  "WHERE Class__r.Id = '" + classId + "'";
+  "WHERE Class__r.Id = '" + classId + "'" + " LIMIT 1";
   force.query(soql, success, error);
 }
 
@@ -57,7 +57,7 @@ function showClassDetails(classId) {
                                 '<p>' + (currentClass.Class__r.Class_Time__c || 'No time yet')+ '</p>' +
                             '</li>' +
                             '<li class="table-view-cell">Trainer: ' +
-                                currentClass.Trainer__r.First_Name__c +
+                                currentClass.Instuctor__r.First_Name__c +
                             '</li>' +
                             '<li class="table-view-cell">' +
                                 (currentClass.Class__r.Description__c || 'No description yet') +
