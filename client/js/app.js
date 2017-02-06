@@ -5,7 +5,7 @@ function getClassList(success, error) {
 
 function getClassDetails(classId, success, error) {
   var soql = "SELECT Class__r.Name, " +
-  "Class__r.Session_Date__c, " +
+  "Class__r.Class_Time__c, " +
   "Instuctor__r.First_Name__c, " +
   "Instuctor__r.Last_Name__c " +
   "FROM Class_Trainer__c " +

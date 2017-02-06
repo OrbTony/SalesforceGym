@@ -1,6 +1,6 @@
 {
-  "name": "Salesforce Conference App",
-  "description": "Conference Management App built on Salesforce1 Platform",
+  "name": "Salesforce Gym App",
+  "description": "My Gym App using Angular and Connected App",
   "env": {
     "APP_ID": ""
   }
