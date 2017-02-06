@@ -76,4 +76,4 @@ function showClassDetails(classId) {
 
 var slider = new PageSlider($('body')); // Initialize PageSlider micro-library for nice and hardware-accelerated page transitions
 router.addRoute('', showClassList);
-router.addRoute('Classes/:id', showClassDetails);
+router.addRoute('classes/:id', showClassDetails);
